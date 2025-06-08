@@ -48,8 +48,6 @@ ifneq ($(TARGET_KERNEL_VERSION),$(filter $(TARGET_KERNEL_VERSION),3.18 4.4 4.9 4
   PRODUCT_PACKAGES += android.hardware.usb-service.qti
 endif
 
-PRODUCT_VENDOR_PROPERTIES += ro.usb.uvc.enabled=true
-
 USB_USES_QMAA = $(TARGET_USES_QMAA)
 ifeq ($(TARGET_USES_QMAA_OVERRIDE_USB),true)
        USB_USES_QMAA = false
